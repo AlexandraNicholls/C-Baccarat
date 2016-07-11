@@ -31,11 +31,12 @@ void deckCards::printDeck() const{
 
 deckCards::deckCards(){
 	string faces[] = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+	int values[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0 };
 	string suit[] = { "H", "D", "C", "S" };
 	deck = new card[CARDS_PER_DECK];
 	currentCard = 0;
 	for (int i = 0; i < CARDS_PER_DECK; i++){
-		deck[i] = card(faces[i % 13], suit[i / 13]);
+		deck[i] = card(faces[i % 13], suit[i / 13], values[i%13]);
 	}
 }
 

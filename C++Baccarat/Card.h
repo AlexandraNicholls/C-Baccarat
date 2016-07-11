@@ -8,22 +8,23 @@ using namespace std;
 class card{
 
 public:
-	card(string cardFace, string cardsuit); //constructor
+	card(string cardFace, string cardsuit, int value); //constructor
 	string print() const;
 	card(); // default constructor
 
 private:
 	string face;
 	string suit;
-
+	int value;
 };
 
 card::card(){
 
 }
-card::card(string cardFace, string cardSuit){
+card::card(string cardFace, string cardSuit, int cardValue){
 	face = cardFace;
 	suit = cardSuit;
+	value = cardValue;
 }
 string card::print() const{
 	return (face + " of " + suit);
