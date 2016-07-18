@@ -1,7 +1,7 @@
 #include "Spectator.h"
 
 int Spectator::placeBid() {
-
+	return 0;
 }
 
 void Spectator::receiveWinnings() {

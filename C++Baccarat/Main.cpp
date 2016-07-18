@@ -1,9 +1,14 @@
-#include "DeckCards.h"
+#include "Deck.h"
 
 using namespace std;
 
 int main(){
 
+	//deckCards dc = deckCards();
+
+
+
+	/*
 	deckCards deck;
 	card currentCard;
 	deck.printDeck();
@@ -16,6 +21,8 @@ int main(){
 		currentCard = deck.dealCard();
 		cout<< currentCard.print() << endl;
 	}
+
+	*/
 	system("PAUSE");
 	return 0;
 

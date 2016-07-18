@@ -1,16 +1,16 @@
-#ifndef CARD_H
-#define CARD_H
+#pragma once
+
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-class card{
+class Card{
 
 public:
-	card(string cardFace, string cardsuit, int value); //constructor
+	Card(string cardFace, string cardsuit, int value); //constructor
 	string print() const;
-	card(); // default constructor
+	Card(); // default constructor
 
 private:
 	string face;
@@ -18,15 +18,3 @@ private:
 	int value;
 };
 
-card::card(){
-
-}
-card::card(string cardFace, string cardSuit, int cardValue){
-	face = cardFace;
-	suit = cardSuit;
-	value = cardValue;
-}
-string card::print() const{
-	return (face + " of " + suit);
-}
-#endif

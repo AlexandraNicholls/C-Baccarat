@@ -65,11 +65,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
-    <ClInclude Include="DeckCards.h" />
+    <ClInclude Include="Deck.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Spectator.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Spectator.cpp" />
